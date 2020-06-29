@@ -1,0 +1,51 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: snow;
+    background-image: url('black-1072366_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 30px;
+    font-size: 40px;
+    border: solid;
+  }
+  
+li {
+    width: auto;
+    text-align: left;
+    font-size: 25px;
+    list-style-type: none;
+    margin-left: 200px;
+    flex-grow: 1;
+  }
+
+li:hover {
+    background-color: black;
+}
+
+button {
+    background-color: silver;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    float: left;
+    text-align: center;
+    width: 900px;
+    height: auto;
+}
+/* changes the background color for the delete button when hovering */
+#d:hover {
+    background-color: red;
+}
+/* Changes the size of the checkbox */
+.check {
+    width:40px;
+}
