@@ -5,16 +5,16 @@ html {
     background-image: url('black-1072366_1280.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
+}
+
 input {
     padding-top: 30px;
     width: 500px;
     height: 30px;
     font-size: 40px;
     border: solid;
-  }
-  
+}
+
 li {
     width: auto;
     text-align: left;
@@ -22,7 +22,7 @@ li {
     list-style-type: none;
     margin-left: 200px;
     flex-grow: 1;
-  }
+}
 
 li:hover {
     background-color: black;
@@ -41,11 +41,28 @@ ul {
     width: 900px;
     height: auto;
 }
+
 /* changes the background color for the delete button when hovering */
 #d:hover {
     background-color: red;
 }
+
 /* Changes the size of the checkbox */
 .check {
-    width:40px;
+    width: 40px;
+}
+
+section {
+    border: 1px dashed #333;
+    padding: 4em 2em;
+}
+
+#mylocation {
+    margin: 4em 0;
+}
+
+#map {
+    color: black;
+    height: 400px;
+    width: 900px;
 }

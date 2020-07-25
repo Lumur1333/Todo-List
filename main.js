@@ -49,8 +49,14 @@
       if (document.getElementsByClassName('check') !== null) {
           closeLi.style.textDecoration = 'line-through';
           input.setAttribute('class', 'uncheck');
+
+          let pare = e.target.closest('ul');
+          pare.appendChild(closeLi.parentElement);
       } else if (document.getElementsByClassName('uncheck') === null) {
-          closeLi.style.textDecoration = 'none';
+          closeLi.parentNode.style.textDecoration = 'none';
+
+          let pare = closeLi.parentElement.parentElement;
+          pare.insertBefore(closeLi.parentElement, parent.firstChild);
       }
   }
 

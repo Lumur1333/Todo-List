@@ -10,6 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <script src="main.js" async defer></script>
+    <script src="geolocationapi.js" async defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVo9EQucAxyM63SVVf033k3l24ninevOc&callback=initMap">
+    </script>
+    <script src="thirdpartyapi.js" async defer></script>
+
 
 </head>
 
@@ -23,6 +29,16 @@
     <ul id="list" name="list">
         <!--This will hold my list-->
     </ul>
+    <main>
+        <section class="row">
+            <h2> Grocery Stores Near You </h2>
+            <button id="mylocation"> Is There A Grocery Store Near Me? </button>
+            <p>Feel free to use this link above if google maps does not load.</p>
+            <p id="location"></p>
+            <a id="map-link" target="_blank"></a>
+            <div id="map"></div>
+        </section>
+    </main>
 </body>
 
 </html>
